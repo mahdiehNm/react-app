@@ -1,17 +1,19 @@
 const Header = () => {
-  const isLogin = true;
+  const isLogin = false;
 
-  if (isLogin) {
-    return (
-      <Header>
-        <button>Dashboard</button>
-      </Header>
-    );
-  }
   return (
-    <Header>
-      <button>login</button>
-    </Header>
+    <header>
+      {isLogin ? (
+        <>
+          <button>dashboard</button>
+          <button>basket</button>
+        </>
+      ) : (
+        <>
+        <button>login</button>
+        <button>basket</button>
+      </>      )}
+    </header>
   );
 };
 
