@@ -7,7 +7,7 @@ const Form = () => {
   //   const [Gender, setGender] = useState("male");
   //   const [rules, setRules] = useState(false);
 
-  const loginHandler = (event) => {
+  const submitHandler = (event) => {
     event.preventDefault();
     console.log(form);
   };
@@ -53,7 +53,7 @@ const Form = () => {
 
   return (
     <div>
-      <form onSubmit={loginHandler}>
+      <form onSubmit={submitHandler}>
         <input
           type="text"
           placeholder="Email"
